@@ -1,0 +1,11 @@
+matplotlib
+nibabel
+scikit_image
+scipy
+simpleitk
+numpy
+tqdm
+scipy
+einops
+ignite
+medutils
