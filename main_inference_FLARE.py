@@ -67,8 +67,9 @@ if __name__ == "__main__":
     
     config = configs_smit.get_SMIT_small_128_bias_True()
     model = smit_mini.SMIT_3D_Seg_mini(config,out_channels=15)
-    model_dict = torch.load('weights/run1_ce.pt', map_location="cpu")["state_dict"]
-    model.load_state_dict(model_dict)
+    #Fine-tuning weights would go here - in the next two lines
+    #model_dict = torch.load('weights/run1_ce.pt', map_location="cpu")["state_dict"]
+    #model.load_state_dict(model_dict)
     model.eval()
     model.to(device)
     
